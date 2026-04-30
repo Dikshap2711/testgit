@@ -1,27 +1,92 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# =========================
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# 📦 Dependencies
 
-# testing
-/coverage
+# =========================
 
-# production
-/build
+node_modules/
+FrontEnd/project/node_modules/
+BackEnd/node_modules/
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# =========================
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# 🔐 Environment variables
 
+# =========================
 
-#cred
 .env
+.env.*
+BackEnd/.env
+
+# =========================
+
+# 🏗️ Build files
+
+# =========================
+
+build/
+dist/
+FrontEnd/project/build/
+
+# =========================
+
+# 📜 Logs
+
+# =========================
+
+logs/
+*.log
+npm-debug.log*
+
+# =========================
+
+# 💻 OS files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# 🧠 IDE files
+
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+
+# 🗃️ Cache
+
+# =========================
+
+.cache/
+coverage/
+
+# =========================
+
+# ⚛️ React specific
+
+# =========================
+
+FrontEnd/project/.eslintcache
+
+# =========================
+
+# 🔧 Node backend
+
+# =========================
+
+pids/
+*.pid
+
+# =========================
+
+# ☕ Java (if used later)
+
+# =========================
+
+target/
+*.class

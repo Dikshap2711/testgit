@@ -2,41 +2,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #a9cff1, #dcb2f2);
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7654de 0%, #79c6cc 100%);
 }
 
 .auth-box {
   background: white;
-  padding: 30px;
-  width: 320px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-  text-align: center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
 }
 
 .auth-box h2 {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 24px;
 }
 
-.auth-box input {
+.auth-box input,
+.auth-box select {
   width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 .auth-box button {
   width: 100%;
-  padding: 10px;
-  background: #4facfe;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 .auth-box button:hover {
-  background: #007bff;
+  opacity: 0.9;
+}
+
+.auth-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-box p {
+  text-align: center;
+  margin-top: 16px;
+  color: #666;
+}
+
+.auth-box p span {
+  color: #667eea;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error-msg {
+  background: #fee;
+  color: #e33;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  text-align: center;
 }
